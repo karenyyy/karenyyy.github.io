@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- fall back to site title if page has no title -->
+  <title>
+    
+       Download · RedCaps
+   
+  </title>
+  <meta itemprop="description" name="description" content="" />
+  <link rel="canonical" href="/download">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/static/ico/favicon.ico" type="image/x-icon" />
+
+  <!--Open Graph Related Stuff-->
+<!--  <meta property="og:locale" content="en_US">-->
+<!--  <meta property="og:type" content="website">-->
+<!--  <meta property="og:title" content="Download · RedCaps">-->
+<!--  <meta property="og:url" content="/download">-->
+<!--  <meta property="og:site_name" content="FeelReel">-->
+<!--  <meta property="og:image" content="/static/twitter_card.jpeg"/>-->
+<!--  <meta property="og:image:url" content="/static/twitter_card.jpeg"/>-->
+<!--  <meta property="og:description" content="">-->
+
+  <!--Twitter Card Stuff-->
+  <!--Twitter Card Stuff-->
+<!--  <meta name="twitter:card" content="summary_large_image"/>-->
+<!--  <meta name="twitter:title" content="Download · RedCaps">-->
+<!--  <meta name="twitter:description" content="">-->
+<!--  <meta name="twitter:creator" content="@kdexd">-->
+<!--  <meta name="twitter:image" content="/static/twitter_card.jpeg"/>-->
+<!--  <meta name="twitter:url" content="/download"/>-->
+<!--  <meta name="twitter:domain" value="">-->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="/static/css/navbar.css">
+</head>
+
+
+<body>
+  <nav id="navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+        <div id="site-title-container">
+          <span id="site-title"><a href="/">FeelReel</a></span>
+        </div>
+        <div class="navbar-ul-container" style="margin-top: 5px">
+
+          <ul class="navbar-ul float-right">
+            <li class="nav-listitem">
+              <a href="/explore">Subreddits</a>
+            </li>
+            <li class="nav-listitem">
+              <a href="/emotion">Emotions</a>
+            </li>
+            <li class="nav-listitem">
+              <a href="/download">Download Dataset</a>
+            </li>
+            <li class="nav-listitem">
+              <a href="" target="_blank">Paper</a>
+            </li>
+            <li class="nav-listitem">
+              <a href="//huggingface.co" target="_blank">Model Demo</a>
+            </li>
+            <li class="nav-listitem">
+              <a href="http://faculty.ist.psu.edu/suh972" target="_blank">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+    <div class="content mt-5 pt-5">
+      <!-- Download page can use CSS from home page. -->
+
+<link rel="stylesheet" type="text/css" href="/static/css/explore.css" />
+
+<div class="cover-subtitle-container">
+    <div class="text-left cover-text">Download dataset</div>
+</div>
+
+<p><strong>Current version:</strong> v1.0 (released in XX month XX year)</p>
+
+<p><strong>Terms of use:</strong>
+Uses are subject to <a href="//www.reddit.com/wiki/api-terms" target="_blank">Reddit API terms</a>.</p>
+
+<p><a href="" class="btn btn-danger" style="background-color: #d45855">
+Click here to download v1.0 (XX GB)
+</a></p>
+
+<p>This file contains JSON files containing</p>
+
+<ul>
+  <li>XX</li>
+  <li>XX</li>
+  <li>XX</li>
+  <li>
+    <p>…
+along with <a href="" target="_blank">XX license</a>
+and <a href="//www.reddit.com/wiki/api" target="_blank">Reddit API terms of use</a>.</p>
+  </li>
+  <li><strong>The file structure</strong>:</li>
+</ul>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- README.txt
+- TERMSOFUSE.txt
+- metadata/
+  ├── subreddit 1/
+      ├── &lt;reddit.post.id 1&gt;.json
+      ├── &lt;reddit.post.id 2&gt;.json
+      ├── ...
+      └── ...
+  ├── subreddit 2/
+  ├── ...
+  └── ...
+</code></pre></div></div>
+
+<div class="row homesec-title">
+    <h2>Metadata format</h2>
+  </div>
+<p>Each <code class="language-plaintext highlighter-rouge">&lt;reddit.post.id&gt;.json</code> contains metadata of image posts from a single subreddit,
+following this schema.</p>
+
+<p>A sample example from the datatset:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elon musk at my local barnes and noble"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://i.redd.it/a7oueb592bpb1.jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"moxyfloxacin"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"i hope its pages and pages of the truth i doubt it though"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"created_utc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-09-19 20:46:15"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"analysis"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"common nouns"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"hope"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"doubt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"truth"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"emotion tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"optimism"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"attention scores"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"hope"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"doubt"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.11211709678173065</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DataAstronaut_"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"just listened to walter isacsons podcast with lex friedman from the sound of him talking about elon on it should be an interesting read"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"created_utc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2023-09-19 21:22:38"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"analysis"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"common nouns"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"walter"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"isacsons"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"friedman"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"elon"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"podcast"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"walter isacsons"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"interesting read"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"walter isacsons podcast"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"isacsons podcast"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"verbs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"listen"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"sound"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"talk"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"adjectives"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"interesting"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"lex friedman"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+                </span><span class="p">},</span><span class="w">
+                </span><span class="nl">"emotion tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approval"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"attention scores"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"listened"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"read"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2401873618364334</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"interesting"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.10860899090766907</span><span class="p">,</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+    </div>
+  </div>
+  <div class="credits" style="text-align: center; padding: 10px">
+    Maintained by: <a href="">Karen Ye</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+---
+---
+@import "style";
+
+/************************************************
+ |  Navbar                                      |
+ ************************************************/
+
+#navbar {
+    color: $navbar-text-color;
+    position: fixed;
+    padding: 1rem 0 0 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #A79BE4;
+    background-image: url("/static/img/emo.jpeg");
+    z-index: 1030;
+}
+
+#site-title-container {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 180px;
+    height: 45px;
+    background-image: url("/static/ico/feelreel_logo.jpg");
+    background-repeat: no-repeat;
+}
+
+#site-title a {
+    color: $navbar-text-color;
+    font-weight: 700;
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.navbar-ul-container {
+    display: inline-block;
+    float: right;
+
+    .navbar-ul {
+        margin: 0.5rem 0 0 0;
+    }
+
+    .nav-listitem {
+        margin: 0 15px 0 15px;
+        font-size: 1rem;
+        display: inline-block;
+        text-transform: uppercase;
+        a {
+            color: $navbar-text-color;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    #navbar {
+        position: absolute;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    #site-title-container {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .navbar-ul-container {
+        display: block;
+        float: none;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        width: 100%;
+
+        // Center navigation links below logo.
+        .navbar-ul {
+            padding: 0;
+        }
+    }
+}

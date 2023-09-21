@@ -1,0 +1,233 @@
+---
+---
+@import "style";
+@import "instance.scss";
+
+
+/************************************************
+ * Teasure figure and caption                   *
+ ************************************************/
+
+// Add a faint gray underline in anchors of main section.
+.content a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#teaser-caption {
+    display: block;
+    font-size: $caption-fs;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+// Generic title of any section on home page.
+.homesec-title {
+    margin-top: 1rem;
+    color: #483B89;
+    width: 50rem;
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-family: "Arial Black";
+    //text-align: center;
+    text-shadow: 0 0 1rem rgba(white, .5);
+}
+
+// Generic container for body of any section on home page.
+.homesec-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    // First child in container must not have any left margin/padding so it can
+    // align nicely with the heading.
+    .col:first-child {
+        padding-left: 0;
+    }
+    background-color: #E8E8F6;
+}
+
+
+.home-ppl-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    // First child in container must not have any left margin/padding so it can
+    // align nicely with the heading.
+    .col:first-child {
+        padding-left: 0;
+    }
+}
+
+/************************************************
+ |  Paper                                       |
+ ************************************************/
+
+.paper-title {
+    font-size: $paper-title-fs;
+    font-weight: 700;
+    margin: 4px 0 4px 0;
+    margin-left: 1rem;
+}
+
+.paper-authors {
+    line-height: $line-height;
+    font-size: $paper-authors-fs;
+    margin-left: 1rem;
+}
+
+.paper-banner {
+    margin: 10px 0 0 0;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(black, .15);
+
+    img {
+        width: 100%
+    }
+}
+
+.paper-links {
+    margin: 5px 0 0 0;
+}
+
+/************************************************
+ * People section                               *
+ ************************************************/
+
+/** Remove border from peoples' pictures. */
+.people-pic-hyperlink, .people-pic-hyperlink:hover {
+    border: 0px;
+}
+
+.people-pic {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+}
+
+.college-pic {
+    //display: flex;
+    margin-top: 100px;
+    width: 13rem;
+    height: 5rem;
+}
+
+.people-name {
+    text-align: center;
+}
+
+.people-name a {
+    font-size: $people-fs;
+}
+
+.people-affiliation {
+    font-size: $people-fs - 2px;
+    margin: 3px 0 3px 0;
+}
+
+.affiliation-logo {
+    display: inline-block;
+    margin: 30px 5px 10px 5px;
+    max-height: 30px;
+}
+
+/************************************************
+ * Cover section                                *
+ ************************************************/
+
+.cover-container {
+  height: 500px;
+  //margin-top: -0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background-color: #A79BE4;
+  background-image: url("/static/img/social-media.png");
+  background-repeat: no-repeat;
+    background-position: center;
+  //background-size: cover;
+    //background-size: 100% 100%;
+
+}
+
+.cover-container .cover-text {
+  color: #483B89;
+  width: 50rem;
+  font-size: 2.3rem;
+  font-weight: 400;
+  font-family: "Arial Black";
+  text-align: center;
+  text-shadow: 0 0 1rem rgba(white, .5);
+}
+
+
+
+
+.cover-subtitle-container {
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+    height: 110px;
+    //display: inline-grid;
+    background-color: #E8E8F6;
+    //opacity: 0.7;
+    //border-radius: 50%;
+    //background-image: url("/static/img/people/emo.jpeg");
+
+    box-shadow: 0 .5rem 1rem rgba(black, .15);
+}
+
+.home-stats {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-number {
+    color: #483B89;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.stat-subtext {
+    font-size: 1.25rem;
+}
+
+  /* Mobile */
+
+@media (max-width: 650px) {
+    .cover-container {
+        height: 300px;
+        .cover-text {
+            width: 30rem;
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .cover-container {
+        height: 250px;
+        .cover-text {
+            width: 25rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 16px;
+
+}
+
+
+th,td {
+    border: 3px solid #E8E8F6;
+    font-size: 16px;
+    padding: 15px;
+}
+
+
+

@@ -1,0 +1,23 @@
+title: "FeelReel"
+subtitle: "FeelReel: A dataset of emotional image-comment pairs curated from Reddit"
+url: ""
+
+# Build settings
+include: ["_pages"]
+plugins_dir:
+  - jekyll-sitemap
+
+sass:
+  style: "compressed"
+  sass_dir: "static/css"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
